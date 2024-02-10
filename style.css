@@ -134,6 +134,11 @@ body{
 .popup-box, .popup-box .popup{
     opacity: 0;
     pointer-events: none;
+    transition: all 0.25s ease;
+}
+.popup-box.show, .popup-box.show .popup{
+    opacity: 1;
+    pointer-events: auto;
 }
 .popup .content{
     width: calc(100% - 15px);
@@ -188,4 +193,5 @@ form .row label{
     color: #fff;
     font-size: 17px;
     border-radius: 4px;
+    cursor: pointer;
 }
