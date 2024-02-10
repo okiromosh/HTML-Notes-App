@@ -131,6 +131,10 @@ body{
     width: 100%;
     justify-content: center;
 }
+.popup-box, .popup-box .popup{
+    opacity: 0;
+    pointer-events: none;
+}
 .popup .content{
     width: calc(100% - 15px);
     background: #fff;
