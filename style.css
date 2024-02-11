@@ -52,6 +52,10 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+.note .details{
+    max-height: 200px;
+    overflow-y: auto;
+}
 .note p{
     font-size: 22px;
     font-weight: 500;
@@ -90,9 +94,14 @@ body{
     transition: transform 0.2s ease;
     transform-origin: bottom right;    
 }
-.settings:hover .menu{
+
+/*.settings:hover .menu{
+    transform: scale(1);
+} */
+.settings.show .menu{
     transform: scale(1);
 }
+
 .settings .menu li{
     height: 25px;    
     border-radius: 0;
